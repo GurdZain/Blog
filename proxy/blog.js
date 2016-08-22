@@ -1,4 +1,8 @@
+var Q = require('q');
+var bb = require('bluebird');
 var Blog = require('../models').Blog;
+var mongoose = require('mongoose');
+mongoose.Promise = bb;
 
 /**
  *
@@ -29,3 +33,15 @@ exports.test = function (callback) {
     Blog.find({},callback)
 };
 
+exports.testQ = function(){
+    var deferred = Q.defer();
+    Blog.find({}, function(err, data){
+        if (err) deferred.reject(err);
+        else deferred.resolve(data);
+    });
+    return deferred.promise;
+};
+
+exports.testPromise = function(){
+    return Blog.find({}).exec();
+};
