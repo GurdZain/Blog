@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/detail.css">
+  <link rel="stylesheet" href="../css/default.min.css">
+  <title>Title</title>
+  <script src="../javascripts/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body>
+<% include header.ejs %>
+<div class="content">
+  <div class="main-content">
+    <div class="wrapper">
+      <div id="blog_detail">
+        <%-detail %>
+      </div>
+    </div>
+  </div>
+  <% include siderbar.ejs %>
+  <div class="footer">
+    @ 2016 JK-zzz
+  </div>
+</div>
+</body>
+</html>

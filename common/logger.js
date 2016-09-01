@@ -11,6 +11,7 @@ log4js.configure({
 });
 
 var logger = log4js.getLogger('cheese');
-logger.setLevel(config.debug && env !== 'test' ? 'DEBUG' : 'ERROR');
+//logger.setLevel(config.debug && env !== 'test' ? 'DEBUG' : 'ERROR');
+logger.setLevel('DEBUG');
 
 module.exports = logger;

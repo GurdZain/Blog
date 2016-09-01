@@ -1,0 +1,66 @@
+#blog_detail{
+    padding: 30px 20px 15px 77px;
+    list-style: none;
+}
+#blog_detail h1{
+    font-size: 1.6rem;
+    font-weight: 500;
+    font-family: "Comic Sans MS", sans-serif;
+}
+#blog_detail h3{
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 15px;
+    margin: 45px 0 25px 0;
+    /*font-weight: 900;*/
+
+}
+#blog_detail hr{
+    display: none;
+}
+#blog_detail p{
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    text-indent: 2em;
+    font-size: 16px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 28px;
+}
+#blog_detail a{
+    color: #4d99bf;
+}
+#blog_detail a:hover{
+    color: indianred;
+}
+#blog_detail strong{
+    color: goldenrod;
+}
+p code{
+    color: orangered;
+    padding: 0 8px;
+}
+pre code{
+    color: black;
+    border:1px solid;
+    border-radius:20px;
+    -moz-border-radius:25px; /* Old Firefox */
+}
+pre{
+    margin: 0 auto;
+    max-width: 720px;
+}
+img{
+    margin: 0 auto;
+    max-width: 720px;
+    max-height: 500px;
+}
+#blog_detail h5{
+    padding-top: 10px;
+}
+h5 code{
+
+}

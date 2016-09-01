@@ -3,9 +3,10 @@ var Schema = mongoose.Schema;
 
 var BlogSchema = new Schema({
     time: {type: Date},
-    tag: {type: String},
-    content: {type: String},
-    author: {type: String}
+    tag: {type: Array},
+    path: {type: String},
+    cat: {type: String},
+    title: {type: String}
 });
 
 mongoose.model('blog', BlogSchema);

@@ -10,3 +10,278 @@
     time: Thu Jan 01 1970 08:00:00 GMT+0800 (中国标准时间),
     tag: 'test',
     author: 'zhjk' } ]
+[2016-08-31 21:01:19.440] [ERROR] cheese - { [CastError: Cast to ObjectId failed for value "123" at path "_id"]
+  message: 'Cast to ObjectId failed for value "123" at path "_id"',
+  name: 'CastError',
+  kind: 'ObjectId',
+  value: 123,
+  path: '_id',
+  reason: undefined }
+CastError: Cast to ObjectId failed for value "123" at path "_id"
+    at MongooseError.CastError (/Users/Koala/WebstormProjects/blog/node_modules/mongoose/lib/error/cast.js:19:11)
+    at ObjectId.cast (/Users/Koala/WebstormProjects/blog/node_modules/mongoose/lib/schema/objectid.js:147:13)
+    at ObjectId.castForQuery (/Users/Koala/WebstormProjects/blog/node_modules/mongoose/lib/schema/objectid.js:187:15)
+    at cast (/Users/Koala/WebstormProjects/blog/node_modules/mongoose/lib/cast.js:208:32)
+    at Query.cast (/Users/Koala/WebstormProjects/blog/node_modules/mongoose/lib/query.js:2653:10)
+    at Query.find (/Users/Koala/WebstormProjects/blog/node_modules/mongoose/lib/query.js:1130:10)
+    at /Users/Koala/WebstormProjects/blog/node_modules/mongoose/lib/query.js:2230:21
+    at Promise._execute (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/debuggability.js:272:9)
+    at Promise._resolveFromExecutor (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/promise.js:475:18)
+    at new Promise (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/promise.js:77:14)
+    at Query.exec (/Users/Koala/WebstormProjects/blog/node_modules/mongoose/lib/query.js:2223:10)
+    at Object.exports.getPathByID (/Users/Koala/WebstormProjects/blog/proxy/blog.js:38:32)
+    at handle_document_md (/Users/Koala/WebstormProjects/blog/controllers/blog.js:30:18)
+    at tryCatcher (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/promise.js:504:31)
+    at Promise._settlePromise (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/promise.js:561:18)
+    at Promise._settlePromise0 (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/promise.js:606:10)
+    at Promise._settlePromises (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/promise.js:685:18)
+    at Async._drainQueue (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/async.js:138:16)
+    at Async._drainQueues (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/async.js:148:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/async.js:17:14)
+    at processImmediate [as _immediateCallback] (timers.js:383:17)
+[2016-08-31 21:03:06.753] [ERROR] cheese - [TypeError: path must be a string]
+TypeError: path must be a string
+    at TypeError (native)
+    at Object.fs.readFile (fs.js:250:11)
+    at handle_document_file (/Users/Koala/WebstormProjects/blog/controllers/blog.js:20:12)
+    at tryCatcher (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/promise.js:504:31)
+    at Promise._settlePromise (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/promise.js:561:18)
+    at Promise._settlePromise0 (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/promise.js:606:10)
+    at Promise._settlePromises (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/promise.js:685:18)
+    at Async._drainQueue (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/async.js:138:16)
+    at Async._drainQueues (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/async.js:148:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/async.js:17:14)
+    at processImmediate [as _immediateCallback] (timers.js:383:17)
+[2016-08-31 21:03:32.920] [ERROR] cheese - [TypeError: path must be a string]
+TypeError: path must be a string
+    at TypeError (native)
+    at Object.fs.readFile (fs.js:250:11)
+    at handle_document_file (/Users/Koala/WebstormProjects/blog/controllers/blog.js:20:12)
+    at tryCatcher (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/promise.js:504:31)
+    at Promise._settlePromise (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/promise.js:561:18)
+    at Promise._settlePromise0 (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/promise.js:606:10)
+    at Promise._settlePromises (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/promise.js:685:18)
+    at Async._drainQueue (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/async.js:138:16)
+    at Async._drainQueues (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/async.js:148:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/async.js:17:14)
+    at processImmediate [as _immediateCallback] (timers.js:383:17)
+[2016-08-31 21:04:17.022] [ERROR] cheese - [TypeError: path must be a string]
+TypeError: path must be a string
+    at TypeError (native)
+    at Object.fs.readFile (fs.js:250:11)
+    at handle_document_file (/Users/Koala/WebstormProjects/blog/controllers/blog.js:21:12)
+    at tryCatcher (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/promise.js:504:31)
+    at Promise._settlePromise (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/promise.js:561:18)
+    at Promise._settlePromise0 (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/promise.js:606:10)
+    at Promise._settlePromises (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/promise.js:685:18)
+    at Async._drainQueue (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/async.js:138:16)
+    at Async._drainQueues (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/async.js:148:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/async.js:17:14)
+    at processImmediate [as _immediateCallback] (timers.js:383:17)
+[2016-08-31 21:04:55.391] [ERROR] cheese - [TypeError: path must be a string]
+TypeError: path must be a string
+    at TypeError (native)
+    at Object.fs.readFile (fs.js:250:11)
+    at handle_document_file (/Users/Koala/WebstormProjects/blog/controllers/blog.js:21:12)
+    at tryCatcher (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/promise.js:504:31)
+    at Promise._settlePromise (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/promise.js:561:18)
+    at Promise._settlePromise0 (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/promise.js:606:10)
+    at Promise._settlePromises (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/promise.js:685:18)
+    at Async._drainQueue (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/async.js:138:16)
+    at Async._drainQueues (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/async.js:148:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/async.js:17:14)
+    at processImmediate [as _immediateCallback] (timers.js:383:17)
+[2016-08-31 21:07:48.126] [ERROR] cheese - [TypeError: path must be a string]
+TypeError: path must be a string
+    at TypeError (native)
+    at Object.fs.readFile (fs.js:250:11)
+    at handle_document_file (/Users/Koala/WebstormProjects/blog/controllers/blog.js:21:12)
+    at tryCatcher (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/promise.js:504:31)
+    at Promise._settlePromise (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/promise.js:561:18)
+    at Promise._settlePromise0 (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/promise.js:606:10)
+    at Promise._settlePromises (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/promise.js:685:18)
+    at Async._drainQueue (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/async.js:138:16)
+    at Async._drainQueues (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/async.js:148:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/async.js:17:14)
+    at processImmediate [as _immediateCallback] (timers.js:383:17)
+[2016-08-31 21:08:10.400] [ERROR] cheese - [TypeError: path must be a string]
+TypeError: path must be a string
+    at TypeError (native)
+    at Object.fs.readFile (fs.js:250:11)
+    at handle_document_file (/Users/Koala/WebstormProjects/blog/controllers/blog.js:21:12)
+    at tryCatcher (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/promise.js:504:31)
+    at Promise._settlePromise (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/promise.js:561:18)
+    at Promise._settlePromise0 (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/promise.js:606:10)
+    at Promise._settlePromises (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/promise.js:685:18)
+    at Async._drainQueue (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/async.js:138:16)
+    at Async._drainQueues (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/async.js:148:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/async.js:17:14)
+    at processImmediate [as _immediateCallback] (timers.js:383:17)
+[2016-08-31 21:10:23.078] [ERROR] cheese - [TypeError: path must be a string]
+TypeError: path must be a string
+    at TypeError (native)
+    at Object.fs.readFile (fs.js:250:11)
+    at handle_document_file (/Users/Koala/WebstormProjects/blog/controllers/blog.js:21:12)
+    at tryCatcher (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/promise.js:504:31)
+    at Promise._settlePromise (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/promise.js:561:18)
+    at Promise._settlePromise0 (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/promise.js:606:10)
+    at Promise._settlePromises (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/promise.js:685:18)
+    at Async._drainQueue (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/async.js:138:16)
+    at Async._drainQueues (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/async.js:148:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/async.js:17:14)
+    at processImmediate [as _immediateCallback] (timers.js:383:17)
+[2016-08-31 21:10:50.086] [ERROR] cheese - [TypeError: path must be a string]
+TypeError: path must be a string
+    at TypeError (native)
+    at Object.fs.readFile (fs.js:250:11)
+    at handle_document_file (/Users/Koala/WebstormProjects/blog/controllers/blog.js:21:12)
+    at tryCatcher (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/promise.js:504:31)
+    at Promise._settlePromise (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/promise.js:561:18)
+    at Promise._settlePromise0 (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/promise.js:606:10)
+    at Promise._settlePromises (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/promise.js:685:18)
+    at Async._drainQueue (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/async.js:138:16)
+    at Async._drainQueues (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/async.js:148:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/async.js:17:14)
+    at processImmediate [as _immediateCallback] (timers.js:383:17)
+[2016-08-31 21:10:54.155] [ERROR] cheese - [TypeError: path must be a string]
+TypeError: path must be a string
+    at TypeError (native)
+    at Object.fs.readFile (fs.js:250:11)
+    at handle_document_file (/Users/Koala/WebstormProjects/blog/controllers/blog.js:21:12)
+    at tryCatcher (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/promise.js:504:31)
+    at Promise._settlePromise (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/promise.js:561:18)
+    at Promise._settlePromise0 (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/promise.js:606:10)
+    at Promise._settlePromises (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/promise.js:685:18)
+    at Async._drainQueue (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/async.js:138:16)
+    at Async._drainQueues (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/async.js:148:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/async.js:17:14)
+    at processImmediate [as _immediateCallback] (timers.js:383:17)
+[2016-08-31 21:11:06.207] [ERROR] cheese - [TypeError: path must be a string]
+TypeError: path must be a string
+    at TypeError (native)
+    at Object.fs.readFile (fs.js:250:11)
+    at handle_document_file (/Users/Koala/WebstormProjects/blog/controllers/blog.js:21:12)
+    at tryCatcher (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/promise.js:504:31)
+    at Promise._settlePromise (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/promise.js:561:18)
+    at Promise._settlePromise0 (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/promise.js:606:10)
+    at Promise._settlePromises (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/promise.js:685:18)
+    at Async._drainQueue (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/async.js:138:16)
+    at Async._drainQueues (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/async.js:148:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (/Users/Koala/WebstormProjects/blog/node_modules/bluebird/js/release/async.js:17:14)
+    at processImmediate [as _immediateCallback] (timers.js:383:17)
+[2016-08-31 21:27:21.664] [ERROR] cheese - { [Error: ENOENT: no such file or directory, open 'teststt'] errno: -2, code: 'ENOENT', syscall: 'open', path: 'teststt' }
+Error: ENOENT: no such file or directory, open 'teststt'
+    at Error (native)
+[2016-08-31 21:27:47.073] [ERROR] cheese - { [Error: ENOENT: no such file or directory, open 'teststt'] errno: -2, code: 'ENOENT', syscall: 'open', path: 'teststt' }
+Error: ENOENT: no such file or directory, open 'teststt'
+    at Error (native)
+[2016-08-31 21:28:44.819] [INFO] cheese - { _id: 57c6d7282a2fa72c1171d749, path: 'teststt' }
+[2016-08-31 21:28:44.827] [ERROR] cheese - { [Error: ENOENT: no such file or directory, open 'teststt'] errno: -2, code: 'ENOENT', syscall: 'open', path: 'teststt' }
+Error: ENOENT: no such file or directory, open 'teststt'
+    at Error (native)
+[2016-08-31 21:28:44.828] [INFO] cheese - undefined
+[2016-08-31 21:33:48.133] [ERROR] cheese - { [Error: ENOENT: no such file or directory, open 'teststt'] errno: -2, code: 'ENOENT', syscall: 'open', path: 'teststt' }
+Error: ENOENT: no such file or directory, open 'teststt'
+    at Error (native)
+[2016-08-31 21:33:48.140] [INFO] cheese - undefined
+[2016-08-31 21:33:49.290] [ERROR] cheese - { [Error: ENOENT: no such file or directory, open 'teststt'] errno: -2, code: 'ENOENT', syscall: 'open', path: 'teststt' }
+Error: ENOENT: no such file or directory, open 'teststt'
+    at Error (native)
+[2016-08-31 21:33:49.291] [INFO] cheese - undefined
+[2016-08-31 21:38:02.749] [ERROR] cheese - { [Error: ENOENT: no such file or directory, open 'teststt'] errno: -2, code: 'ENOENT', syscall: 'open', path: 'teststt' }
+Error: ENOENT: no such file or directory, open 'teststt'
+    at Error (native)
+[2016-08-31 21:38:03.613] [ERROR] cheese - { [Error: ENOENT: no such file or directory, open 'teststt'] errno: -2, code: 'ENOENT', syscall: 'open', path: 'teststt' }
+Error: ENOENT: no such file or directory, open 'teststt'
+    at Error (native)
+[2016-08-31 21:39:08.617] [ERROR] cheese - { [Error: ENOENT: no such file or directory, open 'teststt'] errno: -2, code: 'ENOENT', syscall: 'open', path: 'teststt' }
+Error: ENOENT: no such file or directory, open 'teststt'
+    at Error (native)
+[2016-08-31 21:39:08.624] [INFO] cheese - undefined
+[2016-08-31 21:39:17.651] [ERROR] cheese - { [Error: ENOENT: no such file or directory, open 'teststt'] errno: -2, code: 'ENOENT', syscall: 'open', path: 'teststt' }
+Error: ENOENT: no such file or directory, open 'teststt'
+    at Error (native)
+[2016-08-31 21:39:17.652] [INFO] cheese - undefined
+[2016-08-31 21:39:53.001] [INFO] cheese - <Buffer 23 43 54 46 20 e5 9b 9e e5 bf 86 e5 bd 95 0a 2d 2d 2d 0a 0a 0a 2a 2a 31 2e 78 73 73 20 e7 bb 95 e8 bf 87 20 63 73 70 20 e8 8e b7 e5 8f 96 20 68 74 74 ... >
+[2016-09-01 16:31:56.441] [ERROR] cheese - { [Error: ENOENT: no such file or directory, open './myBlog/ctf 记录']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: './myBlog/ctf 记录' }
+Error: ENOENT: no such file or directory, open './myBlog/ctf 记录'
+    at Error (native)
+[2016-09-01 16:31:57.986] [ERROR] cheese - { [Error: ENOENT: no such file or directory, open './myBlog/ctf 记录']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: './myBlog/ctf 记录' }
+Error: ENOENT: no such file or directory, open './myBlog/ctf 记录'
+    at Error (native)
+[2016-09-01 16:32:03.142] [ERROR] cheese - { [Error: ENOENT: no such file or directory, open './myBlog/ctf 记录']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: './myBlog/ctf 记录' }
+Error: ENOENT: no such file or directory, open './myBlog/ctf 记录'
+    at Error (native)
+[2016-09-01 16:32:53.999] [ERROR] cheese - { [Error: ENOENT: no such file or directory, open './myBlog/ctf 记录']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: './myBlog/ctf 记录' }
+Error: ENOENT: no such file or directory, open './myBlog/ctf 记录'
+    at Error (native)
+[2016-09-01 16:33:43.030] [ERROR] cheese - { [Error: ENOENT: no such file or directory, open '../myBlog/ctf 记录']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '../myBlog/ctf 记录' }
+Error: ENOENT: no such file or directory, open '../myBlog/ctf 记录'
+    at Error (native)
+[2016-09-01 16:34:09.438] [ERROR] cheese - { [Error: ENOENT: no such file or directory, open '../myBlog/ctf 记录']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '../myBlog/ctf 记录' }
+Error: ENOENT: no such file or directory, open '../myBlog/ctf 记录'
+    at Error (native)
+[2016-09-01 16:34:37.304] [ERROR] cheese - { [Error: ENOENT: no such file or directory, open '../myBlog/ctf 记录']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '../myBlog/ctf 记录' }
+Error: ENOENT: no such file or directory, open '../myBlog/ctf 记录'
+    at Error (native)
+[2016-09-01 16:34:43.130] [ERROR] cheese - { [Error: ENOENT: no such file or directory, open '../myBlog/ctf 记录']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '../myBlog/ctf 记录' }
+Error: ENOENT: no such file or directory, open '../myBlog/ctf 记录'
+    at Error (native)
+[2016-09-01 16:34:56.610] [ERROR] cheese - { [Error: ENOENT: no such file or directory, open '../../myBlog/ctf 记录']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '../../myBlog/ctf 记录' }
+Error: ENOENT: no such file or directory, open '../../myBlog/ctf 记录'
+    at Error (native)
+[2016-09-01 16:35:14.247] [ERROR] cheese - { [Error: ENOENT: no such file or directory, open 'myBlog/ctf 记录']
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'myBlog/ctf 记录' }
+Error: ENOENT: no such file or directory, open 'myBlog/ctf 记录'
+    at Error (native)
+[2016-09-01 16:38:18.316] [INFO] cheese - <Buffer 23 43 54 46 20 e5 9b 9e e5 bf 86 e5 bd 95 0a 2d 2d 2d 0a 0a 0a 23 23 23 20 31 2e 78 73 73 20 e7 bb 95 e8 bf 87 20 63 73 70 20 e8 8e b7 e5 8f 96 20 68 ... >

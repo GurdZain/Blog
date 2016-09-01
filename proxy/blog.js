@@ -5,13 +5,13 @@ var mongoose = require('mongoose');
 mongoose.Promise = bb;
 
 /**
- *
+ * 获取所有 Blog 的信息列表。
  *
  *
  *
  **/
-exports.getBlogTitleAndTimeByid = function(id, callback){
-    Blog.find({_id: id}, callback);
+exports.getBlogTitleTime = function(){
+    return Blog.find({},{time:1,title:1}).exec();
 };
 
 /**
@@ -28,9 +28,31 @@ exports.getBlogContentByid = function(id, callback){
         return callback(message);
     })
 };
+/**
+ * 获取 blog 的文件路径
+ *
+ *
+ *
+ **/
+exports.getPathByID = function(id){
+    return Blog.findOne({_id:id},{path:1}).exec();
+};
 
-exports.test = function (callback) {
-    Blog.find({},callback)
+/**
+ * 获取 blog 的文件路径
+ *
+ *
+ *
+ **/
+exports.addBlog = function(title, file_time, file_tag, file_path, file_cat){
+    var new_blog = new Blog();
+    new_blog.title = title;
+    new_blog.time = file_time;
+    new_blog.tag = file_tag;
+    new_blog.path = file_path;
+    new_blog.cat = file_cat;
+
+    return new_blog.save();
 };
 
 exports.testQ = function(){
