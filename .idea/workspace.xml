@@ -4,11 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/routes/index.js" line="4" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0fb7222c-96f7-4b9e-905a-40fc8d6e59e0" name="Default" comment="logger">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/config.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="0fb7222c-96f7-4b9e-905a-40fc8d6e59e0" name="Default" comment="logger" />
     <ignored path="blog.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
